@@ -35,4 +35,4 @@ Nawaf Khaled Alshobrami: File input/output management and documentation.
 
 Saeed Saleh Alshehri: GUI development and backend integration.
 
-Instructor: Mishal Khalid Al-Dekhayel, for guidance and instruction throughout the course
+Instructor: Mishal Khalid Al-Dekhayel, for guidance and instruction throughout the course.
