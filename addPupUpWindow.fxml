@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="217.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.utils.AddPupUpWindow">
+   <children>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="15.0" text="add" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="50.0" text="Please select your name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="80.0" maxWidth="220.0" text="Which row would you like your seats to be at" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="125.0" text="Please select the first seat">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" layoutX="215.0" layoutY="50.0" onAction="#handleSaveNameText" promptText="name" >
+      <MenuButton fx:id="rowMenuButton" layoutX="268.0" layoutY="87.0" mnemonicParsing="false" onAction="#updateRowMenu" text="Row" >
+      <MenuButton fx:id="firstSeatMenuButton" layoutX="266.0" layoutY="122.0" mnemonicParsing="false" onAction="#updateFirstSeatRangeMenu" text="Seats" >
+      <Label layoutX="30.0" layoutY="166.0" text="Please select the last seat">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="lastSeatMenuButton" layoutX="266.0" layoutY="163.0" mnemonicParsing="false" onAction="#updateLastSeatRangeMenu" text="Seats" >
+   </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" maxHeight="380.0" maxWidth="600.0" pannable="true" snapToPixel="false" vbarPolicy="ALWAYS" vmax="2500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.NewStageController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" layoutX="-2.0" layoutY="14.0" prefHeight="30.0" prefWidth="600.0" text="Stage Setter">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="HOME" layoutX="440.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleReturnToHomeButtonAction" text="HOME" />
+            <Label layoutX="30.0" layoutY="70.0" maxHeight="200.0" maxWidth="330.0" prefWidth="330.0" text="Please enter the name of the show:" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" layoutX="370.0" layoutY="70.0" onAction="#handleSaveNameText" prefWidth="180.0" promptText="text" />
+            <Label layoutX="30.0" layoutY="110.0" maxHeight="200.0" maxWidth="330.0" prefWidth="330.0" text="Please enter how many rows in your  stage (must be greater than 0):" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="170.0" maxHeight="200.0" maxWidth="330.0" prefWidth="330.0" text="Please enter how many Seats in a row (must be greater than 0):" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="230.0" maxHeight="200.0" maxWidth="330.0" prefWidth="330.0" text="Please enter the price of the Standard seats:" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="280.0" maxHeight="200.0" maxWidth="330.0" prefWidth="330.0" text="Please enter the price of the VIP seats:" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="rowsTextField" layoutX="370.0" layoutY="120.0" onAction="#handleSaveRowsText" prefWidth="180.0" promptText="number" />
+            <TextField fx:id="seatsTextField" layoutX="370.0" layoutY="170.0" onAction="#handleSaveSeatsText" prefWidth="180.0" promptText="number" />
+            <TextField fx:id="standardPriceTextField" layoutX="370.0" layoutY="220.0" onAction="#handleStandardPriceText" prefWidth="180.0" promptText="number" />
+            <TextField fx:id="vipPriceTextField" layoutX="370.0" layoutY="270.0" onAction="#handleVipPriceText" prefWidth="180.0" promptText="number" />
+            <Label layoutX="30.0" layoutY="310.0" maxHeight="200.0" maxWidth="330.0" text="Would you be interested in offering a Premium service to your attendees?" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="yesButton" layoutX="370.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleSelectionChange" onMouseClicked="#handleSelectionChange" prefHeight="60.0" prefWidth="75.0" text="Yes">
+               <toggleGroup>
+                  <ToggleGroup fx:id="PrimeServiceAttendes" />
+               </toggleGroup>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="noButton" layoutX="481.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleSelectionChange" onMouseClicked="#handleSelectionChange" prefHeight="60.0" prefWidth="75.0" text="No" toggleGroup="$PrimeServiceAttendes">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <Button fx:id="Save" layoutX="510.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleSaveButtonAction" text="Save" />
+            <Label fx:id="premuimServicePrice" layoutX="30.0" layoutY="370.0" maxHeight="200.0" maxWidth="330.0" text="Please enter the price of the Premium service:" visible="false" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="premuimServicePriceTextF" layoutX="370.0" layoutY="370.0" onAction="#handlePremuimPriceText" prefWidth="180.0" promptText="number" visible="false" />
+            <AnchorPane fx:id="dynamicContentArea" layoutY="420.0" prefHeight="2000.0" prefWidth="600.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</ScrollPane>
