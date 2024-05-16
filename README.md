@@ -21,8 +21,13 @@ Working: This branch includes a fully functional version of the system with the 
 NotWorking: This branch includes an experimental version where Saeed attempted to implement the GUI using JavaFX. This version may have bugs and is not fully functional.
 
 # Installation
-To run this project, ensure you have Java installed on your machine. Clone the repository and navigate to the directory containing the project files. You can compile and run the project using your preferred Java IDE or from the command line. Make sure to check out the appropriate branch depending on your interest in the GUI implementation.
+To run this project, ensure you have Java installed on your machine along with the necessary GUI libraries:
 
+For the Working branch: Ensure Swing is installed as this branch uses Swing for the GUI.
+
+For the NotWorking branch: Ensure JavaFX is installed as this branch attempts to implement the GUI using JavaFX.
+
+Clone the repository and navigate to the directory containing the project files. You can compile and run the project using your preferred Java IDE or from the command line. Make sure to check out the appropriate branch depending on which GUI implementation you wish to explore.
 # Usage
 Organizers can load an existing stage setup or create a new one by specifying details such as stage name, number of seats, and pricing.
 
